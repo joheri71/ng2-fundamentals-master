@@ -1,3 +1,5 @@
+import { ToastrService } from './common/toastr.service';
+import { Eventservice } from './events/shared/event.service';
 import { NavBarComponent } from './nav/navbar.component';
 import {NgModule} from '@angular/core'
 import {BrowserModule} from '@angular/platform-browser'
@@ -12,6 +14,7 @@ declarations: [
     EventsListComponent,
     EventsThumbnailComponent,
     NavBarComponent],
-bootstrap: [EventsAppComponent]
+bootstrap: [EventsAppComponent],
+providers: [Eventservice, ToastrService]
 })
 export class AppModule{}
