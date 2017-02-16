@@ -1,3 +1,4 @@
+import { NavBarComponent } from './nav/navbar.component';
 import {NgModule} from '@angular/core'
 import {BrowserModule} from '@angular/platform-browser'
 import {EventsAppComponent} from './events-app.component'
@@ -9,7 +10,8 @@ imports: [BrowserModule],
 declarations: [
     EventsAppComponent,
     EventsListComponent,
-    EventsThumbnailComponent],
+    EventsThumbnailComponent,
+    NavBarComponent],
 bootstrap: [EventsAppComponent]
 })
 export class AppModule{}
